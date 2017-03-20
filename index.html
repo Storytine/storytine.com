@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Storytine</title>
+    <style>
+      #container {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+           -moz-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+             -o-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+        font-family: "courier new", monospace, sans-serif;
+        color: #fff;
+        text-align: center;
+        text-shadow: 1px 1px 1px black;
+      }
+
+      #title {
+        margin-top: -6vw;
+        font-size: 15vw;
+      }
+      
+      #text {
+        margin-top: -2vw;
+        font-size: 6vw;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <div id="title">storytine</div>
+      <div id="text">work in progress</div>
+    </div>
+  </body>
+  <script type="text/javascript">
+    var background = document.createElement("DIV");
+
+    background.style.zIndex = -1;
+    background.style.position = "fixed";
+    background.style.top = 0;
+    background.style.left = 0;
+    background.style.width = "100%";
+    background.style.height = "100%";
+    background.style.backgroundSize = "cover";
+    background.style.backgroundRepeat = "no-repeat";
+    background.style.backgroundPosition = "center center";
+    background.style.backgroundImage = "url(https://source.unsplash.com/random/" + window.innerWidth + "x" + window.innerHeight + ")";
+
+    document.body.appendChild(background);
+  </script>
+</html>
